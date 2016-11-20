@@ -47,7 +47,7 @@ bool  isUniqueArray(string s)		// assuming ascii characters
 
 }
 
-bool  isUniqueBit(string s)
+bool  isUniqueBit(string s)			// Assuming a-z characters 
 {
 	if (s.size()>26)
 		return false;
