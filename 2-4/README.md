@@ -4,4 +4,16 @@
 
 **Sol.**
 
-TODO
+Create 4 pointers 
+list1h - pointer to the head of list 1.
+list1t - pointer to the tail of list 1.
+list2h - pointer to the head of list 2.
+list2t - pointer to the tail of list 2.
+
+divide the original link list into two link list based on the node values. 
+
+*Implementation in C++*
+
+Book offers more elegant solution using head and tail. I feel my solution more intuitive. 
+
+
