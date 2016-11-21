@@ -23,6 +23,7 @@ def isPal(s):
 	return isSingle(value)
 
 
+
 s="asdfassd"
 print isPal(s)
 
