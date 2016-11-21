@@ -34,7 +34,9 @@ int toggle(int val, int num)
 	}
 	return val;
 }
-</pre></code>
+</code></pre>
+
+
 
 **How to check if there is only one bit of value 1**
 Easy solution: check the last bit, if last bit is 0, shift right, if last bit is 1, remove that rest of the number should 0. 
