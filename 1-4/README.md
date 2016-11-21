@@ -29,7 +29,7 @@ int toggle(int val, int num)
 		val=val & ~(1<<num); // one converted to zero
 	}
 	else
-	{
+	{ 
 		val=val | (1<<num); // zero converted to one. 
 	}
 	return val;
