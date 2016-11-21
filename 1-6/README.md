@@ -6,4 +6,8 @@
 
 Create another string which keep the char and frequency. Finally compare the length of the new string with the previous string. 
 
+**NOTE** 
+
+Converting integer to string or char* is critical for this problem. It is easier in python, also easier in C++ if to_string is working. (// to string is working with -std=C++11 option while compiling )
+
 *Implementation in C++ and python*
