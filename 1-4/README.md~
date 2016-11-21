@@ -63,7 +63,7 @@ bool isSingle(int val)
 	else
 		return false;
 }
-'''
+
 
 
 *Method 2 is implemented in c++ and python*
