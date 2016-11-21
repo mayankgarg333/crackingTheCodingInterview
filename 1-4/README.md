@@ -21,7 +21,7 @@ Exact count of the characters is not required, only the even and odd is required
 Zero to one : place 1 where you want to convert and rest zero and take OR
 one to zero : place 1 where you want to convert and rest zero. Negate it and take AND
 
-''' c++
+<pre><code>
 int toggle(int val, int num)
 {
 	if( (val & 1<<num) >0)   // means the bit at the num position is 1
@@ -34,7 +34,7 @@ int toggle(int val, int num)
 	}
 	return val;
 }
-'''
+</pre></code>
 
 **How to check if there is only one bit of value 1**
 Easy solution: check the last bit, if last bit is 0, shift right, if last bit is 1, remove that rest of the number should 0. 
