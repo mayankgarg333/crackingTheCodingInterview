@@ -12,20 +12,29 @@ struct TreeNode{
 
 
 
+void print_inorder(TreeNode* root);
 
-
-void add_element(TreeNode **node, int *A, int i, int j)
+void add_element(TreeNode *node, int *A, int i, int j)
 {
 	if(i>j)
 		return;
 	if(i==j){
-		*node=new TreeNode(A[i]);
+		node->data=A[i];
+		print_inorder(node);
+		cout << "change " << i << j << endl;
 		return;
 	}
+	
 	int mid=(i+j)/2;
-	*node=new TreeNode(A[mid]);
-	add_element(&((*node)->left),A,i,mid-1);
-	add_element(&((*node)->right),A,mid+1,j);
+	node->data = A[mid];
+	print_inorder(node);
+	cout << "change " << i << mid << j << endl;
+	TreeNode* tmp = new TreeNode;
+	node->left = tmp;
+	tmp = new TreeNode;
+	node->right = tmp;
+	add_element((node->left),A,i,mid-1);
+	add_element((node->right),A,mid+1,j);
 	return;
 }
 
@@ -54,8 +63,8 @@ int main()
 	
 	int A[]={1,2,4,7,8,11,14};
 	int size=sizeof(A)/sizeof(A[0]);
-	TreeNode* root;
-	add_element(&root,A,0,size-1);
+	TreeNode* root = new TreeNode;
+	add_element(root,A,0,size-1);
 	print_preorder(root);
 	cout <<endl;
 	print_inorder(root);
